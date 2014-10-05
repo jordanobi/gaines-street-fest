@@ -1,4 +1,6 @@
 GainesStreetFest::Application.routes.draw do
+  get "site_pages/bands"
+  root "site_pages#home"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
