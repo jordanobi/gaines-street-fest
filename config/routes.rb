@@ -1,5 +1,10 @@
 GainesStreetFest::Application.routes.draw do
-  get "site_pages/bands"
+  
+  match '/bands',   to: "site_pages#bands",   via: 'get'
+  match '/aboutus',   to: "site_pages#aboutus",   via: 'get'
+  match '/sponsors',   to: "site_pages#sponsors",   via: 'get'
+  match '/merch',   to: "site_pages#merch",   via: 'get'
+  match '/press',   to: "site_pages#press",   via: 'get'
   root "site_pages#home"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
