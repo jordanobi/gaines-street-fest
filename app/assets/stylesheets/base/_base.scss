@@ -1,19 +1,19 @@
-html {   
+html {
     font-family: $font-family;
      -webkit-font-smoothing: antialiased;
  }
 
 
 
- header { 
+ header {
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, .05), rgba(0, 0, 0, .05)), 
-    url(fest-pic.jpg);
-    background-image: -o-linear-gradient(rgba(0, 0, 0, .05), rgba(0, 0, 0, .05)), 
-    url(fest-pic.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)), 
-    url(fest-pic.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, .05), rgba(0, 0, 0, .05)),
+    url(image_path('fest-pic.jpg'));
+    background-image: -o-linear-gradient(rgba(0, 0, 0, .05), rgba(0, 0, 0, .05)),
+    url(image_path('fest-pic.jpg'));
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)),
+    url(image_path('fest-pic.jpg'));
     position: relative;
     min-height: 560px;
   overflow: auto;
@@ -26,24 +26,24 @@ html {
     display: inline;
 }
 
-body { 
+body {
     height: 100%;
     display: block;
     position: relative;
     overflow: auto;
-    
-    
+
+
 
     &::after {
       content: "";
-      background: url(unicorn-bg.svg) no-repeat center center;
+      background: url(image_path('unicorn-bg.svg')) no-repeat center center;
       opacity: 0.15;
       top: 0;
       left: 0;
       bottom: 0;
       right: 0;
       position: absolute;
-      z-index: -1;   
+      z-index: -1;
 
     background-size: 100%;
     max-width: 1185px;
@@ -54,7 +54,7 @@ body {
     }
     };
 
-    .container { 
+    .container {
 
     }
 
@@ -70,17 +70,17 @@ h2 {
   clear: both;
 
   &::before {
-    content: url(light_bolt.svg);
+    content: url(image_path('light_bolt.svg'));
     transform: scaleX(-1);
     margin-right: 25px;
     position: relative;
     top: 10px;
-    
+
   };
 
   &::after {
     display: inline-block;
-    content: url(light_bolt.svg);
+    content: url(image_path('light_bolt.svg'));
     margin-left: 25px;
     transform: scaleX(-1);
     position: relative;
@@ -88,18 +88,18 @@ h2 {
   };
 }
 
-.show-list { 
+.show-list {
     margin: 0 auto;
     text-align: center;
-    li { 
+    li {
       font-size: 1.5em;
 
-        &:after { 
-            font-size: 1.2em;  
+        &:after {
+            font-size: 1.2em;
             content: '\2022';
             margin-right: 5px;
             margin-left: 5px;
-            color: $red; 
+            color: $red;
         }
   }}
 
@@ -110,4 +110,4 @@ h3 {
 }
 
 .schedule { margin: 0 auto; border: 1px solid grey; padding-left: 5%; min-width: 460px;}
-    
+
