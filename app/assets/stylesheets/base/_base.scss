@@ -1,0 +1,113 @@
+html {   
+    font-family: $font-family;
+     -webkit-font-smoothing: antialiased;
+ }
+
+
+
+ header { 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, .05), rgba(0, 0, 0, .05)), 
+    url(fest-pic.jpg);
+    background-image: -o-linear-gradient(rgba(0, 0, 0, .05), rgba(0, 0, 0, .05)), 
+    url(fest-pic.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .2)), 
+    url(fest-pic.jpg);
+    position: relative;
+    min-height: 560px;
+  overflow: auto;
+    color: $white;
+
+ }
+
+ li {
+    list-style: none;
+    display: inline;
+}
+
+body { 
+    height: 100%;
+    display: block;
+    position: relative;
+    overflow: auto;
+    
+    
+
+    &::after {
+      content: "";
+      background: url(unicorn-bg.svg) no-repeat center center;
+      opacity: 0.15;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;   
+
+    background-size: 100%;
+    max-width: 1185px;
+    min-width: 820px;
+    min-height: 1453px;
+    background-position: 0 520px;
+
+    }
+    };
+
+    .container { 
+
+    }
+
+h2 {
+  font-size: em(28px);
+  color: $red;
+  display: block;
+  position: relative;
+  text-transform: uppercase;
+  width: 400px;
+  text-align: center;
+  margin: 40px auto;
+  clear: both;
+
+  &::before {
+    content: url(light_bolt.svg);
+    transform: scaleX(-1);
+    margin-right: 25px;
+    position: relative;
+    top: 10px;
+    
+  };
+
+  &::after {
+    display: inline-block;
+    content: url(light_bolt.svg);
+    margin-left: 25px;
+    transform: scaleX(-1);
+    position: relative;
+    top: 10px;
+  };
+}
+
+.show-list { 
+    margin: 0 auto;
+    text-align: center;
+    li { 
+      font-size: 1.5em;
+
+        &:after { 
+            font-size: 1.2em;  
+            content: '\2022';
+            margin-right: 5px;
+            margin-left: 5px;
+            color: $red; 
+        }
+  }}
+
+
+h3 {
+
+
+}
+
+.schedule { margin: 0 auto; border: 1px solid grey; padding-left: 5%; min-width: 460px;}
+    

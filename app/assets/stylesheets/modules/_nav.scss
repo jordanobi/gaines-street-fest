@@ -1,0 +1,55 @@
+.top-info-bar {
+
+    background-color: $black;
+    display: table;
+    height: em(60px);
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    
+    li {  
+        font-size: em(26px);
+        margin-right: 20px;
+
+        &:after { 
+            font-size: 1.2em;  
+            content: '\2022';
+            margin-left: 25px; 
+            color: $red; 
+        }
+
+        &:last-of-type:after {
+            content: none;
+            
+        }
+
+            a {
+                color: white;
+                text-decoration: none;
+        
+                @extend .sliding-middle-out;
+                  
+                &:active {
+                    color: $red;
+                   
+                };
+
+            }
+    }
+
+    ul { 
+        
+        margin: auto;
+        display: table-cell;
+        vertical-align: middle;
+        height: 100%;
+    
+    }
+}
+
+
+
+.selected { 
+     color: $red !important;
+    }

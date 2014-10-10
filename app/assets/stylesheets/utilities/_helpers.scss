@@ -1,0 +1,40 @@
+// ==========================================================================
+// Special Effects
+// ==========================================================================
+
+	/* Used for the main nav */
+	.sliding-middle-out {
+    display: inline-block;
+    position: relative;    
+
+    	&:after {
+		    content: '';
+		    display: block;
+		    margin: auto;
+		    margin-top: em(2px);
+			height: em(3px);
+		    width: em(0px);
+		    background: transparent;
+		    transition: width .4s ease, background-color .4s ease;
+		  
+		}
+
+		&:hover:after {
+    		width: 100%;
+    		background: $red;
+		}
+	}
+
+%underlined {
+	&:after {
+			content: '';
+		    display: block;
+		    margin: auto;
+		    margin-top: em(2px);
+			height: em(3px);
+		    width: em(0px);
+		    background: transparent;
+		    width: inherit;
+    		background: $red;
+    	}
+    	}
